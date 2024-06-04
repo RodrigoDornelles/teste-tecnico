@@ -1,12 +1,11 @@
 # Teste Técnico :clipboard:
 
-> candidato a contratação, deve fazer um fork do repositório e fazer sua implementação de micro serviço.
+> Candidato a contratação deve fazer um fork do repositório e fazer sua implementação de micro serviço.
 
 ## Requisitos da API :paperclip:
 
-Implemente uma microserviço para um formulário de contato que replique o email para o usuário e a empresa que esteja utilizando o serviço.
+Implemente uma microserviço para um formulário de contato que replique o email para o usuário e a empresa que esteja utilizando o serviço:
 
- * Crie um arquivo `.env-example` explicando as variáveis do projeto.
  * Deve possuir um `Procfile` (heroku) ou `Dockerfile` para executar em produção.
  * Re-escreva a `README.md` com instruções de uso para o projeto.
  * Ofereça suporte para [ReCaptcha v2](https://developers.google.com/recaptcha/docs/display) e/ou [HCaptcha](https://www.hcaptcha.com/).
@@ -45,7 +44,7 @@ TEXT_MAIL_HTML = <contact from {name}, using mail: {email}, about: {comment}>
 
  * response:
 
-o código do status deve ser **201** para envio correto. Não é necessário responder qualquer coisa em body.
+O código do status deve ser **201** para envio correto. Não é necessário responder qualquer coisa em body.
 
 #### Erro de captcha:
 
@@ -62,7 +61,7 @@ o código do status deve ser **201** para envio correto. Não é necessário res
 
  * response
 
-o código do status deve ser **401**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
+O código do status deve ser **401**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
 <!-- diferencial rfc9457, mais atualizada, porém mais extensa a explicação. -->
 
 ```json
@@ -89,7 +88,7 @@ o código do status deve ser **401**, retornar um json conforme a [RFC7807](http
 
  * response
 
-o código do status deve ser **400**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
+O código do status deve ser **400**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
 
 ```json
 {
@@ -115,7 +114,7 @@ o código do status deve ser **400**, retornar um json conforme a [RFC7807](http
 
  * response
 
-o código do status deve ser **400**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
+O código do status deve ser **400**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
 
 ```json
 {
@@ -130,7 +129,7 @@ o código do status deve ser **400**, retornar um json conforme a [RFC7807](http
 
  * response
 
-o código do status deve ser **500**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
+O código do status deve ser **500**, retornar um json conforme a [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807).
 
 ```json
 {
